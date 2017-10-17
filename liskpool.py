@@ -12,9 +12,8 @@ PERCENTAGE = 80
 TRANSACTIONFEE = 0.1
 RISEPERDAY = 427.72
 MINPAYOUT = 1
-SECRET = "abc"
-SECONDSECRET = None
-
+SECRET = "invite radio champion visit skate novel walnut tongue wet swift problem fabric"
+SECONDSECRET = "whale forest offer diet update sight bonus model return salt scrap want"
 
 def loadLog ():
 	try:
@@ -26,7 +25,8 @@ def loadLog ():
 			"accounts": {},
 			"skip": [],
 			"voters": [],
-			"withdraw": {}
+			"withdraw": {},
+			"standby": {}
 		}
 	return data
 	
@@ -118,7 +118,7 @@ def calcPayouts (log):
 
 	#Search for voters who removed their vote
 	for y in log['accounts']:
-		if not y in voters:
+		if not y in voters or float(log['accounts'][y]['balance']) == 0:
 			delItems.append(y)
 
 	#Copy and del old items from accounts
