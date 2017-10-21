@@ -12,8 +12,8 @@ PERCENTAGE = 80
 TRANSACTIONFEE = 0.1
 RISEPERDAY = 427.72
 MINPAYOUT = 1
-SECRET = "invite radio champion visit skate novel walnut tongue wet swift problem fabric"
-SECONDSECRET = "whale forest offer diet update sight bonus model return salt scrap want"
+SECRET = ""
+SECONDSECRET = ""
 
 def loadLog ():
 	try:
